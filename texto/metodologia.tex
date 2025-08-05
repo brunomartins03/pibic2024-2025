@@ -1,2 +1,54 @@
+% Numeração das subseções como letras
+\renewcommand{\thesubsection}{\Alph{subsection}}
 
-Texto dos objetivos.
+Nesta seção, são descritos os métodos que orientaram as atividades desta iniciação científica. São apresentados aspectos relacionados à classificação da pesquisa, seguidos do levantamento bibliográfico e dos critérios de seleção do referencial teórico.
+
+\subsection{Classificação da Pesquisa}
+\label{ssec:classificacao-pesquisa}
+
+Este estudo é caracterizado como uma pesquisa aplicada, de abordagem quantitativa e natureza experimental. Quanto aos objetivos, classifica-se como exploratória e explicativa, buscando compreender e explicar fenômenos relacionados à aplicação de IA no diagnóstico oftalmológico. Os procedimentos adotados incluem levantamento bibliográfico, desenvolvimento e validação de modelos computacionais, em contextos transversais e longitudinais.
+
+\paragraph{Técnicas metodológicas empregadas}
+\begin{itemize}
+  \item Extração e pré-processamento de imagens retinográficas;
+  \item Desenvolvimento e treinamento de modelos baseados em clustering, SVM e CNN;
+  \item Avaliação comparativa de desempenho entre modelos treinados a partir de bases locais e públicas;
+  \item Análise exploratória para identificar características relevantes das imagens associadas às condições oftalmológicas;
+  \item Validação cruzada e testes de robustez dos modelos para garantir a aplicabilidade prática dos resultados.
+\end{itemize}
+
+\subsection{Levantamento Bibliográfico}
+\label{ssec:levantamento-bibliografico}
+
+O levantamento bibliográfico foi realizado nas bases PubMed, IEEE Xplore, Web of Science e Scopus, utilizando as seguintes strings de busca refinadas conforme a compatibilidade dos resultados com o escopo da pesquisa. A Tabela~\ref{tab:grade-completa} apresenta as consultas originais, as bases consultadas e o número de artigos obtidos, sendo filtrados apenas os resultados de publicações dos últimos dez anos (2015-2025).
+
+\begin{table}[ht]
+  \centering
+  \caption{Strings de busca, bases de dados consultadas e número de resultados encontrados}
+  \label{tab:grade-completa}
+  \begin{tabular}{@{} l c r @{}}
+    \toprule
+    \textbf{String de Busca} & \textbf{Base de Dados} & \textbf{Resultados} \\ 
+    \midrule
+    \texttt{"diabetic retinopathy"}                     & Web of Science & 22\,528 \\ 
+    \texttt{"diabetic retinopathy"}                     & Scopus         & 32\,473 \\ 
+    \texttt{"diabetic retinopathy"}                     & PubMed         &  3\,542 \\ 
+    \texttt{"diabetic retinopathy" AND brazil}          & Web of Science &     10 \\ 
+    \texttt{"diabetic retinopathy" AND brazil}          & Scopus         &     11 \\ 
+    \bottomrule
+  \end{tabular}
+\end{table}
+\begin{flushleft}
+  \small Fonte: Autor.
+\end{flushleft}
+
+\subsection{Critérios de Seleção}
+\label{ssec:criterios-selecao}
+
+Os artigos selecionados atenderam aos seguintes critérios:
+\begin{itemize}
+  \item Relevância científica (contribuições teóricas ou empíricas significativas);
+  \item Impacto (fator de impacto dos periódicos e número de citações);
+  \item Publicação recente (últimos dez anos, 2015-2025);
+  \item Pertinência metodológica com o tema da pesquisa.
+\end{itemize}
